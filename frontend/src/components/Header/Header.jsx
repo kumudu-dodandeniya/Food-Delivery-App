@@ -7,8 +7,9 @@ const Header = () => {
     <div className='header'>
         <div className="header-contents">
             <h2>Order Your Favourite Food Hear</h2>
-            <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary experties. Our mission is to satisfy your cravings and elevate your dinig experience, onr delicious meal at a time. </p>
+            <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary experties. Our mission is to satisfy your cravings and elevate your dinig experience, our delicious meal at a time. </p>
             <button>View Menu</button>
+       
         </div>
 
     </div>

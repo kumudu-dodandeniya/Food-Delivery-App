@@ -82,6 +82,8 @@ export const assets = {
     parcel_icon
 }
 
+//menu list arry
+
 export const menu_list = [
     {
         menu_name: "Salad",
