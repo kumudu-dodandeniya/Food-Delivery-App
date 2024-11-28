@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Nevbar.css'
 import { assets } from '../../assets/assets'
+import { Link } from 'react-router-dom'
 
 const Nevbar = () => {
  //state
@@ -11,10 +12,10 @@ const Nevbar = () => {
     <div className='navbar'>
     <img src={assets.logo } alt="" className='logo' />
     <ul className="navebar-manu">
-      <li onClick={()=>setMenu("Home")} className={menu=== "Home"?"active":""}>Home</li>
-      <li onClick={()=>setMenu("Manu")} className={menu=== "Manu"?"active":""}>Manu</li>
-      <li onClick={()=>setMenu("Mobile-app")}className={menu=== "Mobile-app"?"active":""}>Mobile-app</li>
-      <li onClick={()=>setMenu("Contact-Us")}className={menu=== "Contact-Us"?"active":""}>Contact Us</li>
+      <Link to= '/' onClick={()=>setMenu("Home")} className={menu=== "Home"?"active":""}>Home</Link>
+      <a href="#explore-menu"onClick={()=>setMenu("Manu")} className={menu=== "Manu"?"active":""}>Manu</a>
+      <a href='#app-download' onClick={()=>setMenu("Mobile-app")}className={menu=== "Mobile-app"?"active":""}>Mobile-app</a>
+      <a href='#footer' onClick={()=>setMenu("Contact-Us")}className={menu=== "Contact-Us"?"active":""}>Contact Us</a>
     </ul>
     <div className="navbar-right">
       <img src={assets.search_icon} alt="" />
