@@ -3,7 +3,7 @@ import './Nevbar.css'
 import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom'
 
-const Nevbar = () => {
+const Nevbar = ({setShowLogin}) => {
  //state
   const [menu,setMenu] = useState("Home")
 
@@ -23,7 +23,7 @@ const Nevbar = () => {
         <img src={assets.basket_icon} alt="" />
         <div className="dot"></div>
       </div>
-      <button>sign in</button>
+      <button onClick={()=>setShowLogin(true)}>sign in</button>
     </div>
     </div>
   )
